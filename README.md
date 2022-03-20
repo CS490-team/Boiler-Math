@@ -66,18 +66,17 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Page
+* Return to previous Page
 
 **Flow Navigation** (Screen to Screen)
 
 * Login Screen
-   * => Home
+   * => Home Page
 * Registration Screen
-   * => Home
+   * => Home Page
 * Stream Screen
-   * => 
+   * => Detail
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
