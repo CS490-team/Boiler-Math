@@ -53,14 +53,11 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * Stream 
    * User can view an exam
    * User can like an exam
+   * User can mark an exam completed
    * User can download an exam
    * User can comment an exam
    * User can rate the difficulty of an exam
-* Profile
-   * User can view their identity and stats
-   * User can review the exams that they liked
-* Settings
-   * User can configure app options and settings
+   * User can view the exam they marked completed and liked.
 
 ### 3. Navigation
 
