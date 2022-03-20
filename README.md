@@ -58,8 +58,9 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
    * User can rate the difficulty of an exam
 * Profile
    * User can view their identity and stats
+   * User can review the exams that they liked
 * Settings
-   * User can configure app options
+   * User can configure app options and settings
 
 ### 3. Navigation
 
@@ -71,12 +72,12 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login Screen
+   * => Home
+* Registration Screen
+   * => Home
+* Stream Screen
+   * => 
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
