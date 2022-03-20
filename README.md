@@ -1,7 +1,4 @@
-Original App Design Project - README Template
-===
-
-# APP_NAME_HERE
+# Boiler Math
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,13 +8,13 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+Help students look up and study Purdue Math past exams. User can download comment, and rate the difficulty of the exams. This will help them review the past exams easier and more efficiently.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
+- **Category:** Education
+- **Mobile:** This app would be developed for ios.
+- **Story:** 
 - **Market:**
 - **Habit:**
 - **Scope:**
