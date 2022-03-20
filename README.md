@@ -18,7 +18,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 - **Story:** Help students easily look up Purdue past math exams. Users can download every exam that they think is helpful and rate the difficulty of each exam. They can also comment their thoughts and solutions.
 - **Market:** Any Purdue students who are taking Math classes or having trouble preparing for their upcoming exams.
 - **Habit:** Purdue Students are using the app daily or before exams to check their performance and be well prepared.
-- **Scope:** 
+- **Scope:** By using this app, students can prepare their Math exams more easily. They may form studying group and help each other to improve Math skills.
 
 ## Product Spec
 
@@ -29,6 +29,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * User can create a new account
 * User can login
 * User can view an exam
+* User can mark an exam completed
 * User can post a new comment to exams
 * User can like an exam
 * User can rate the difficulty of an exam
@@ -39,7 +40,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 * User can upload an exam
 * User can share an exam
-* User can review the exams that they liked
+* User can view the exam they marked completed and liked.
 * User can search for a specific exam
 * User can follow other users
 * User can view others' collection
