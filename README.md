@@ -12,7 +12,7 @@ Learn math, check Purdue Math past exams and review for upcoming midterms and fi
 We’ve got you covered from basic arithmetic to advanced calculus and geometry. You CAN do math!
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
+
 - **Category:** Education
 - **Mobile:** This app would be developed for ios.
 - **Story:** Help students easily look up Purdue past math exams. Users can download every exam that they think is helpful and rate the difficulty of each exam. They can also comment their thoughts and solutions.
