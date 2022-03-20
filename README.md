@@ -72,12 +72,15 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 **Flow Navigation** (Screen to Screen)
 
-* Login Screen
+* Login successful
    * => Home Page
-* Registration Screen
+* Registration successful
    * => Home Page
-* Stream Screen
-   * => Detail
+* Course
+   * => which exam
+* Exam
+   * => which date
+   
 
 ## Wireframes
 <img src="./flow.png" width=600>
