@@ -8,16 +8,17 @@
 
 ## Overview
 ### Description
-Help students look up and study Purdue Math past exams. User can download comment, and rate the difficulty of the exams. This will help them review the past exams easier and more efficiently.
+Learn math, check Purdue Math past exams and review for upcoming miterms and finals with this math learning app for Purdue Student! Your professors won't provide sample questions and past exams? Don't know how to prepare for  math exams and tests? Want to find more valuable questions to practice? Get unstuck ASAP with our app for a variety of authentic past math exmasn in Purdue University.
+We’ve got you covered from basic arithmetic to advanced calculus and geometry. You CAN do math!
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Education
 - **Mobile:** This app would be developed for ios.
-- **Story:** 
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Story:** Help students easily look up Purdue past math exams. Users can download every exam that they think is helpful and rate the difficulty of each exam. They can also comment their thoughts and solutions.
+- **Market:** Any Purdue students who are taking Math classes or having trouble preparing for their upcoming exams.
+- **Habit:** Purdue Students are using the app daily or before exams to check their performance and be well prepared.
+- **Scope:** 
 
 ## Product Spec
 
@@ -25,7 +26,14 @@ Help students look up and study Purdue Math past exams. User can download commen
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* User can create a new account
+User can login
+User can post a new photo to their feed
+User can search for other users
+User can like a photo
+User can follow/unfollow another user
+User can view a feed of photos
+
 * ...
 
 **Optional Nice-to-have Stories**
