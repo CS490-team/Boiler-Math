@@ -31,6 +31,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * User can view an exam
 * User can post a new comment to exams
 * User can like an exam
+* User can rate the difficulty of an exam
 * User can download an exam
 
 
@@ -54,6 +55,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
    * User can like an exam
    * User can download an exam
    * User can comment an exam
+   * User can rate the difficulty of an exam
 * Profile
    * User can view their identity and stats
 * Settings
