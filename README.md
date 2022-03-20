@@ -80,10 +80,10 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
    * => Detail
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="./flow.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="./flow.png" width=600>
 
 ### [BONUS] Interactive Prototype
 
