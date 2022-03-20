@@ -27,14 +27,12 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 **Required Must-have Stories**
 
 * User can create a new account
-User can login
-User can post a new photo to their feed
-User can search for other users
-User can like a photo
-User can follow/unfollow another user
-User can view a feed of photos
+* User can login
+* User can view a feed of photos
+* User can post a new comment to exams
+* User can like a exam
+* User can download a exam
 
-* ...
 
 **Optional Nice-to-have Stories**
 
@@ -49,6 +47,14 @@ User can view a feed of photos
 * [list second screen here]
    * [list associated required story here]
    * ...
+Login / Register - User signs up or logs into their account
+Stream - User can scroll through important resources in a list
+Detail - User can view the specifics of a particular resource
+Creation - User can create a new resource
+Profile - User can view their identity and stats
+Settings - User can configure app options
+
+
 
 ### 3. Navigation
 
