@@ -67,7 +67,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 **Tab Navigation** (Tab to Screen)
 
 * Home Page
-* Return to previous Page
+* Completed exam Page
 * Liked exam page
 
 **Flow Navigation** (Screen to Screen)
