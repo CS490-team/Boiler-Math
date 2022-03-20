@@ -77,9 +77,13 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * Registration successful
    * => Home Page
 * Course
-   * => which exam
+   * => which exam page
 * Exam
-   * => which date
+   * => which date page
+ * back
+   * => move back page
+ * logout
+   * => log in page
    
 
 ## Wireframes
