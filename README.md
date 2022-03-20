@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-Learn math, check Purdue Math past exams and review for upcoming miterms and finals with this math learning app for Purdue Student! Your professors won't provide sample questions and past exams? Don't know how to prepare for  math exams and tests? Want to find more valuable questions to practice? Get unstuck ASAP with our app for a variety of authentic past math exmasn in Purdue University.
+Learn math, check Purdue Math past exams and review for upcoming midterms and finals with this math learning app for Purdue Student! Your professors won't provide sample questions and past exams? Don't know how to prepare for  math exams and tests? Want to find more valuable questions to practice? Get unstuck ASAP with our app for a variety of authentic past math exams in Purdue University.
 We’ve got you covered from basic arithmetic to advanced calculus and geometry. You CAN do math!
 
 ### App Evaluation
@@ -28,33 +28,36 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 * User can create a new account
 * User can login
-* User can view a feed of photos
+* User can view an exam
 * User can post a new comment to exams
-* User can like a exam
-* User can download a exam
+* User can like an exam
+* User can download an exam
 
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can upload an exam
+* User can share an exam
+* User can review the exams that they liked
+* User can search for a specific exam
+* User can follow other users
+* User can view others' collection
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
-Login / Register - User signs up or logs into their account
-Stream - User can scroll through important resources in a list
-Detail - User can view the specifics of a particular resource
-Creation - User can create a new resource
-Profile - User can view their identity and stats
-Settings - User can configure app options
-
-
+* Login Screen
+   * User can log into their account
+* Registration Screen
+   * User can sign up a new account
+* Stream 
+   * User can view an exam
+   * User can like an exam
+   * User can download an exam
+   * User can comment an exam
+* Profile
+   * User can view their identity and stats
+* Settings
+   * User can configure app options
 
 ### 3. Navigation
 
