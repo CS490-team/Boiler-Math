@@ -95,7 +95,20 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+| Property        | Type  | Description |
+| -------------   | ----- | ----------- |
+| user name       | String | The user name of an user            |
+| password        | String  |   The password of an user         |
+| confirmed password        | String  |   The confirmed password of an user         |
+| exam url        | String  |   The url of an exam         |
+| exam answer url      | String  |   The url of an exam answer       |
+| average rating     | Double  |   The average rating of difficulty among all users      |
+| user rating     | Double  |   The rating of difficulty of one using      |
+| exam date    | String  |   The date of one past exam      |
+
+
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
