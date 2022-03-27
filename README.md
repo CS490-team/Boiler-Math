@@ -90,7 +90,6 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 ### [BONUS] Digital Wireframes & Mockups
 <img src="./flow.png" width=800>
 
-### [BONUS] Interactive Prototype
 
 ## Schema 
 ### Models
@@ -140,10 +139,10 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 ##### An API Of Boiler Math
 - Base URL - [http://45.56.103.124/](http://45.56.103.124/)
 
-|HTTP Verb | Endpoint | Description|
-|----------|----------|------------|
-| `GET`    | /exams | get exam_url, answer url, solution url|
-| `GET`    | /exam_list| get exam lists for all time|
-| `GET`    | /descriptions   | get course descriptions|
-| `GET`    | /names | get course names|
+|HTTP Verb | Endpoint | Description| Link |
+|----------|----------|------------|------|
+| `GET`    | /exams | get exam_url, answer url, solution url|[http://45.56.103.124/exams](http://45.56.103.124/exams)|
+| `GET`    | /exam_list| get exam lists for all time|[http://45.56.103.124/exam_list](http://45.56.103.124/exam_list)|
+| `GET`    | /descriptions   | get course descriptions|[http://45.56.103.124/descriptions](http://45.56.103.124/descriptions)|
+| `GET`    | /names | get course names|[http://45.56.103.124/names](http://45.56.103.124/names)|
 
