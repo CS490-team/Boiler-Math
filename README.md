@@ -93,7 +93,6 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 | Property        | Type  | Description |
 | -------------   | ----- | ----------- |
@@ -102,14 +101,49 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 | confirmed password        | String  |   The confirmed password of an user         |
 | exam url        | String  |   The url of an exam         |
 | exam answer url      | String  |   The url of an exam answer       |
+| exam solution url        | String  |   The url of an exam solution         |
 | average rating     | Double  |   The average rating of difficulty among all users      |
 | user rating     | Double  |   The rating of difficulty of one using      |
 | exam date    | String  |   The date of one past exam      |
-
-
-
+| completed tag    | Boolean  |   The status of an exam completed or not     |
+| liked tag    | Boolean  |   The status of an exam liked or not     |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Login Screen
+      - (Read/GET) Get the username
+      - (Read/GET) Get the password
+   - Registration Screen
+      - (Create/POST) Create a username
+      - (Create/POST) Create a password
+   - Home Screen
+      - (Read/GET) Get the average rating, user rating, course name
+      - (Read/GET) Get course info
+   - Detail Screen
+      - (Read/GET) Get the exam list
+   - Exams Screen
+      - (Read/GET) Get exam_url, answer url, solution url, average rating, user rating, exam date, completed tag, liked tag
+      - (Create/POST) Create a comment
+      - (Update/PUT) Update user completed status
+      - (Update/PUT) Update user liked status
+   - Liked Screen
+      - (Read/GET) Get exam_url, answer url, solution url, average rating, user rating, exam date, completed tag, liked tag
+      - (Create/POST) Create a comment
+      - (Update/PUT) Update user completed status
+      - (Update/PUT) Update user liked status
+   - Completed Screen
+      - (Read/GET) Get exam_url, answer url, solution url, average rating, user rating, exam date, completed tag, liked tag
+      - (Create/POST) Create a comment
+      - (Update/PUT) Update user completed status
+      - (Update/PUT) Update user liked status
+
+##### An API Of Boiler Math
+- Base URL - [http://45.56.103.124/](http://45.56.103.124/)
+
+|HTTP Verb | Endpoint | Description|
+|----------|----------|------------|
+| `GET`    | /exams | get exam_url, answer url, solution url|
+| `GET`    | /exam_list| get exam lists for all time|
+| `GET`    | /descriptions   | get course descriptions|
+| `GET`    | /names | get course names|
+
