@@ -186,7 +186,7 @@
                         <outlet property="confirmPassword" destination="m45-zf-d0J" id="xTS-dT-rEP"/>
                         <outlet property="passwordField" destination="XHh-J8-Zqw" id="DNE-Ci-dEy"/>
                         <outlet property="usernameField" destination="KPF-sh-WnT" id="7ZH-Ve-SbL"/>
-                        <segue destination="QwU-4y-nez" kind="presentation" identifier="signupSegue" modalPresentationStyle="fullScreen" id="HMI-s3-xIt"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signupSegue" modalPresentationStyle="fullScreen" id="F6v-h6-BWm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iy-dX-UlU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -209,7 +209,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Arq-Ox-OcI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="795.53571428571422"/>
+            <point key="canvasLocation" x="18" y="795"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mzq-pD-qvz">
@@ -230,9 +230,6 @@
             <point key="canvasLocation" x="840.57971014492762" y="79.6875"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HMI-s3-xIt"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonBorder" width="1839" height="593"/>
         <image name="homeImage" width="2048" height="2048"/>
