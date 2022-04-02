@@ -146,3 +146,9 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 | `GET`    | /descriptions   | get course descriptions|[http://45.56.103.124/descriptions](http://45.56.103.124/descriptions)|
 | `GET`    | /names | get course names|[http://45.56.103.124/names](http://45.56.103.124/names)|
 
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/yGKxX5Tag6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
