@@ -151,4 +151,4 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/yGKxX5Tag6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/g5EBxuGwSj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
