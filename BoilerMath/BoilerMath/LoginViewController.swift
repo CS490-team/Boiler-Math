@@ -62,14 +62,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func Signup(_ sender: Any) {
-        var user = PFUser()
-        user.signUpInBackground { (success, error) in
-            if success {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            } else {
-                print("Error: \(error?.localizedDescription)")
-            }
-        }
+        self.performSegue(withIdentifier: "regeSegue", sender: nil)
+        
     }
     /*
     // MARK: - Navigation
