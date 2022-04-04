@@ -48,17 +48,27 @@ class LoginViewController: UIViewController {
     
         let username = usernameField.text!
         let password = passwordField.text!
-        PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
-            if user != nil {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            } else {
-                let alert = UIAlertController(title: "Error", message: "Password and username do not match, please try again", preferredStyle: .alert)
-                        let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        alert.addAction(OK)
-                        self.present(alert, animated: true, completion: nil)
-                print("Error: \(error?.localizedDescription)")
+
+        if ((usernameField.text == "") || (passwordField.text == "")) {
+            let alert = UIAlertController(title: "Error", message: "Empty text field, please try again", preferredStyle: .alert)
+                    let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alert.addAction(OK)
+                    self.present(alert, animated: true, completion: nil)
+        } else{
+            PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "Password and username do not match, please try again", preferredStyle: .alert)
+                            let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            alert.addAction(OK)
+                            self.present(alert, animated: true, completion: nil)
+                    print("Error: \(error?.localizedDescription)")
+                }
             }
         }
+        
+       
     }
     
     @IBAction func Signup(_ sender: Any) {

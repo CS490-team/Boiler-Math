@@ -37,23 +37,32 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func Signup(_ sender: Any) {
-        if (confirmPassword.text == passwordField.text && (confirmPassword.text != nil) && (passwordField.text != nil)) {
-            var user = PFUser()
-            user.username = usernameField.text
-            user.password = passwordField.text
-            user.signUpInBackground { (success, error) in
-                if success {
-                    self.performSegue(withIdentifier: "signupSegue", sender: nil)
-                } else {
-                    print("Error: \(error?.localizedDescription)")
-                }
-            }
-        } else {
-            let alert = UIAlertController(title: "Error", message: "Password does not match, please try again", preferredStyle: .alert)
+        if ((confirmPassword.text == "") || (passwordField.text == "") || (usernameField.text == "")) {
+            let alert = UIAlertController(title: "Error", message: "Empty text field, please try again", preferredStyle: .alert)
                     let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alert.addAction(OK)
                     self.present(alert, animated: true, completion: nil)
+        } else {
+            if (confirmPassword.text == passwordField.text && (confirmPassword.text != nil) && (passwordField.text != nil)) {
+                var user = PFUser()
+                user.username = usernameField.text
+                user.password = passwordField.text
+                user.signUpInBackground { (success, error) in
+                    if success {
+                        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+                    } else {
+                        print("Error: \(error?.localizedDescription)")
+                    }
+                }
+            } else {
+                let alert = UIAlertController(title: "Error", message: "Password does not match, please try again", preferredStyle: .alert)
+                        let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alert.addAction(OK)
+                        self.present(alert, animated: true, completion: nil)
+            }
         }
+        
+        
     }
     
     /*
