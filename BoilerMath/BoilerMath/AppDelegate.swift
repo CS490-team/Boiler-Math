@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // --- end copy
         return true
         // Override point for customization after application launch.
-        return true
     }
 
     // MARK: UISceneSession Lifecycle
