@@ -51,6 +51,10 @@ class SignupViewController: UIViewController {
                     if success {
                         self.performSegue(withIdentifier: "signupSegue", sender: nil)
                     } else {
+                        let alert = UIAlertController(title: "Error", message: "Existing user name, please try with a different user name", preferredStyle: .alert)
+                                let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                alert.addAction(OK)
+                                self.present(alert, animated: true, completion: nil)
                         print("Error: \(error?.localizedDescription)")
                     }
                 }
