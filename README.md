@@ -26,7 +26,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 **Required Must-have Stories**
 
-* User can create a new account
+* User can create a new account - [x]
 * User can login
 * User can view an exam
 * User can mark an exam completed
