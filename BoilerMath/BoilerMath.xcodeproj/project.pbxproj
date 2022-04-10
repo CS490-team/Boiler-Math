@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431855CC2803865C00F4A829 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855CB2803865C00F4A829 /* dateCell.swift */; };
+		431855D02803884D00F4A829 /* MoredetailedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855CF2803884D00F4A829 /* MoredetailedController.swift */; };
+		431855D228038E9300F4A829 /* examCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855D128038E9300F4A829 /* examCell.swift */; };
+		43B7E49B2803699C0012C3AE /* courseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7E49A2803699C0012C3AE /* courseCell.swift */; };
+		43B7E49D280370BF0012C3AE /* coueseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B7E49C280370BF0012C3AE /* coueseDetailsViewController.swift */; };
 		95BD7D9EEE8A965F63FE0D14 /* Pods_BoilerMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CD2E2C99284B7FFE90BF51 /* Pods_BoilerMath.framework */; };
 		E532419927F6451400A91593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532419827F6451400A91593 /* AppDelegate.swift */; };
 		E532419B27F6451400A91593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532419A27F6451400A91593 /* SceneDelegate.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431855CB2803865C00F4A829 /* dateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
+		431855CF2803884D00F4A829 /* MoredetailedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoredetailedController.swift; sourceTree = "<group>"; };
+		431855D128038E9300F4A829 /* examCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examCell.swift; sourceTree = "<group>"; };
+		43B7E49A2803699C0012C3AE /* courseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseCell.swift; sourceTree = "<group>"; };
+		43B7E49C280370BF0012C3AE /* coueseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coueseDetailsViewController.swift; sourceTree = "<group>"; };
 		87E83AF03C0F02BF7A9269BB /* Pods-BoilerMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerMath.release.xcconfig"; path = "Target Support Files/Pods-BoilerMath/Pods-BoilerMath.release.xcconfig"; sourceTree = "<group>"; };
 		ACA2719C0FE7CDD94C414D69 /* Pods-BoilerMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerMath.debug.xcconfig"; path = "Target Support Files/Pods-BoilerMath/Pods-BoilerMath.debug.xcconfig"; sourceTree = "<group>"; };
 		C4CD2E2C99284B7FFE90BF51 /* Pods_BoilerMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoilerMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +95,11 @@
 				E53241AE27F64B5B00A91593 /* LoginViewController.swift */,
 				E53241B027F6556600A91593 /* HomeViewController.swift */,
 				E53241B227F797D100A91593 /* SignupViewController.swift */,
+				43B7E49A2803699C0012C3AE /* courseCell.swift */,
+				43B7E49C280370BF0012C3AE /* coueseDetailsViewController.swift */,
+				431855CB2803865C00F4A829 /* dateCell.swift */,
+				431855CF2803884D00F4A829 /* MoredetailedController.swift */,
+				431855D128038E9300F4A829 /* examCell.swift */,
 			);
 			path = BoilerMath;
 			sourceTree = "<group>";
@@ -212,11 +227,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B7E49D280370BF0012C3AE /* coueseDetailsViewController.swift in Sources */,
 				E53241AF27F64B5B00A91593 /* LoginViewController.swift in Sources */,
+				431855D02803884D00F4A829 /* MoredetailedController.swift in Sources */,
 				E532419927F6451400A91593 /* AppDelegate.swift in Sources */,
+				431855D228038E9300F4A829 /* examCell.swift in Sources */,
 				E53241B327F797D100A91593 /* SignupViewController.swift in Sources */,
 				E532419B27F6451400A91593 /* SceneDelegate.swift in Sources */,
+				43B7E49B2803699C0012C3AE /* courseCell.swift in Sources */,
 				E53241B127F6556600A91593 /* HomeViewController.swift in Sources */,
+				431855CC2803865C00F4A829 /* dateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
