@@ -46,7 +46,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Signup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PE-5M-Vxc"/>
-                                    <segue destination="uOU-gJ-UEm" kind="presentation" identifier="regeSegue" modalPresentationStyle="fullScreen" id="4yE-7B-hEV"/>
+                                    <segue destination="uOU-gJ-UEm" kind="presentation" identifier="regeSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="4yE-7B-hEV"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pIf-i5-naD">
@@ -177,6 +177,18 @@
                                     <action selector="Signup:" destination="qnx-cH-741" eventType="touchUpInside" id="w0G-MT-q0Y"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-d1-23a">
+                                <rect key="frame" x="28" y="768" width="346" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Already have an account? Click to login.">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Signup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV7-It-OF6"/>
+                                    <action selector="backLogin:" destination="qnx-cH-741" eventType="touchUpInside" id="j6G-oy-rRg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JRO-uX-39f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -186,7 +198,7 @@
                         <outlet property="confirmPassword" destination="m45-zf-d0J" id="xTS-dT-rEP"/>
                         <outlet property="passwordField" destination="XHh-J8-Zqw" id="DNE-Ci-dEy"/>
                         <outlet property="usernameField" destination="KPF-sh-WnT" id="7ZH-Ve-SbL"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signupSegue" modalPresentationStyle="fullScreen" id="F6v-h6-BWm"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signupSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="F6v-h6-BWm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iy-dX-UlU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

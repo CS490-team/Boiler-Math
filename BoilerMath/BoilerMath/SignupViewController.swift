@@ -13,6 +13,9 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     
+    @IBAction func backLogin(_ sender: Any) {
+        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
