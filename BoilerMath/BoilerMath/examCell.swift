@@ -19,7 +19,14 @@ class examCell: UITableViewCell {
     
     @IBOutlet weak var examversion: UILabel!
     
+    @IBOutlet weak var likebutton: UIButton!
     
+    @IBOutlet weak var completebutton: UIButton!
+    
+    @IBAction func likeaction(_ sender: Any) {
+    }
+    @IBAction func completeaction(_ sender: Any) {
+    }
     @IBAction func exambutton(_ sender:Any) {
         if let url = version["Exam"] {
             // now val is not nil and the Optional has been unwrapped, so use it

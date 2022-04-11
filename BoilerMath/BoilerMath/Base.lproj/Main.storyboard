@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="BoilerMath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BoilerMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,13 @@
                         <viewLayoutGuide key="safeArea" id="WHF-14-sE2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Ous-UB-YJ6"/>
+                    <navigationItem key="navigationItem" title="Home" id="Ous-UB-YJ6">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="CTj-W2-a0m">
+                            <connections>
+                                <action selector="logout:" destination="gld-GV-ybP" id="cfS-LL-UAP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="vkN-fC-d97" id="FSU-z9-qDb"/>
                     </connections>
@@ -185,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-QW-6QV">
-                                <rect key="frame" x="0.0" y="172" width="390" height="672"/>
+                                <rect key="frame" x="0.0" y="442" width="390" height="402"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -212,8 +218,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzm-4J-VAb">
+                                <rect key="frame" x="16" y="171" width="358" height="278"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-9O-nEH">
-                                <rect key="frame" x="88" y="97" width="215" height="36"/>
+                                <rect key="frame" x="88" y="108" width="215" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -225,6 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="4Lc-kO-NFk"/>
                     <connections>
+                        <outlet property="descriptionlabel" destination="Kzm-4J-VAb" id="VJx-79-2xc"/>
                         <outlet property="examName" destination="AMf-9O-nEH" id="Vr0-64-VnN"/>
                         <outlet property="tableView" destination="wF1-QW-6QV" id="xsm-mR-htm"/>
                     </connections>
@@ -312,12 +326,18 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="greyheart"/>
+                                                    <connections>
+                                                        <action selector="likeaction:" destination="y9W-dQ-ell" eventType="touchUpInside" id="Cdc-ye-keV"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="He1-KX-JNt">
                                                     <rect key="frame" x="104" y="211" width="53" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="未命名作品 1"/>
+                                                    <connections>
+                                                        <action selector="completeaction:" destination="y9W-dQ-ell" eventType="touchUpInside" id="tEu-2b-aEV"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yZ-FE-YHC">
                                                     <rect key="frame" x="12" y="173" width="178" height="31"/>
@@ -338,9 +358,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completebutton" destination="He1-KX-JNt" id="DO9-si-o9c"/>
                                             <outlet property="examdate" destination="zaI-18-woM" id="DMc-We-uCE"/>
                                             <outlet property="examname" destination="DOP-ev-GZH" id="vGr-xZ-oYg"/>
                                             <outlet property="examversion" destination="cAk-5b-3Be" id="X6R-PT-QAD"/>
+                                            <outlet property="likebutton" destination="hwE-ki-Yvu" id="q0P-To-0CW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -477,7 +499,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Mzq-pD-qvz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="QwU-4y-nez" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="QwU-4y-nez" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="frr-SF-Bwh">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>

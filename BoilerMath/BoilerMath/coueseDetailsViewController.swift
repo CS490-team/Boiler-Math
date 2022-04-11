@@ -14,10 +14,13 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
     
     @IBOutlet weak var examName: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var descriptionlabel: UILabel!
     var name:String!
     var exams = [String:[String:[String:Any]]]()
+    var d:String!
     override func viewDidLoad() {
         self.examName.text = name
+        self.descriptionlabel.text = d
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self

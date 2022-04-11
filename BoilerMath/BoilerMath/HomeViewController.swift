@@ -6,12 +6,21 @@
 //
 
 import UIKit
-
+import Parse
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var courses = [String:Any]()
+    @IBAction func logout(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let LoginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
+        
+        delegate.window?.rootViewController = LoginViewController
+    }
+    var courses = [String:String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -25,7 +34,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
              if let error = error {
                     print(error.localizedDescription)
              } else if let data = data {
-                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: String]
                  self.courses = dataDictionary
                  self.tableView.reloadData()
                     // TODO: Get the array of movies
@@ -42,7 +51,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell") as! courseCell
         let name = Array(courses.keys)[indexPath.row] as! String
-        let description = courses[name] as! String
+        let description = courses[name]
         cell.CourseNameLabel.text = name
         cell.CourseDescriptionLabel.text = description
         return cell
@@ -59,8 +68,10 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
         let name = Array(courses.keys)[indexPath.row] as! String
+        let description = courses[name]
         let detailsViewController = segue.destination as! coueseDetailsViewController
         detailsViewController.name = name
+        detailsViewController.d = description
         tableView.deselectRow(at: indexPath, animated: true)
 
 
