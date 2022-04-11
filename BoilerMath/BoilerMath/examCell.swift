@@ -15,7 +15,6 @@ class examCell: UITableViewCell {
     @IBOutlet weak var examname: UILabel!
     
     
-    @IBOutlet weak var examdate: UILabel!
     
     @IBOutlet weak var examversion: UILabel!
     

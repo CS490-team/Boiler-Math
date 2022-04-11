@@ -14,6 +14,7 @@ class MoredetailedController: UIViewController,UITableViewDelegate,UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = date
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.reloadData()
@@ -25,7 +26,6 @@ class MoredetailedController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "examCell") as! examCell
-        cell.examdate.text = self.date
         cell.examname.text = self.name
         let version = Array(exams.keys)[indexPath.row] as! String
         cell.examversion.text = version

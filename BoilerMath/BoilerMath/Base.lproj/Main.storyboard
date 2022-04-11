@@ -239,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="2487.6923076923076" y="78.909952606635073"/>
         </scene>
-        <!--Exams-->
+        <!--Moredetailed Controller-->
         <scene sceneID="qbS-gQ-Vt5">
             <objects>
                 <viewController id="hg8-Rz-HrH" customClass="MoredetailedController" customModule="BoilerMath" customModuleProvider="target" sceneMemberID="viewController">
@@ -273,28 +273,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="greencircle" translatesAutoresizingMaskIntoConstraints="NO" id="rx4-Dk-D4p">
-                                                    <rect key="frame" x="246" y="71" width="116" height="126"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-UR-Rp6">
-                                                    <rect key="frame" x="281" y="108" width="28" height="52"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-dN-1rM">
-                                                    <rect key="frame" x="308" y="128" width="15" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-zV-Uh3">
-                                                    <rect key="frame" x="237" y="179" width="135" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-Py-s0k">
                                                     <rect key="frame" x="12" y="108" width="154" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -340,18 +318,32 @@
                                                         <action selector="solbutton:" destination="y9W-dQ-ell" eventType="touchUpInside" id="s3L-eC-xxc"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaI-18-woM">
-                                                    <rect key="frame" x="209" y="32" width="153" height="26"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="greencircle" translatesAutoresizingMaskIntoConstraints="NO" id="rx4-Dk-D4p">
+                                                    <rect key="frame" x="230" y="56" width="116" height="126"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-UR-Rp6">
+                                                    <rect key="frame" x="265" y="93" width="28" height="52"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-dN-1rM">
+                                                    <rect key="frame" x="292" y="113" width="15" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-zV-Uh3">
+                                                    <rect key="frame" x="221" y="164" width="135" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="completebutton" destination="He1-KX-JNt" id="DO9-si-o9c"/>
-                                            <outlet property="examdate" destination="zaI-18-woM" id="DMc-We-uCE"/>
                                             <outlet property="examname" destination="DOP-ev-GZH" id="vGr-xZ-oYg"/>
                                             <outlet property="examversion" destination="cAk-5b-3Be" id="X6R-PT-QAD"/>
                                             <outlet property="likebutton" destination="hwE-ki-Yvu" id="q0P-To-0CW"/>
@@ -363,7 +355,7 @@
                         <viewLayoutGuide key="safeArea" id="akD-7U-l0Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Exams" id="v3c-ff-t73"/>
+                    <navigationItem key="navigationItem" id="v3c-ff-t73"/>
                     <connections>
                         <outlet property="tableView" destination="aZl-NE-a2a" id="rtd-Wg-OgY"/>
                     </connections>
