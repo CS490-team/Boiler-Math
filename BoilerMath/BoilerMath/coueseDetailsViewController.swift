@@ -12,16 +12,15 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
     
     
     
-    @IBOutlet weak var examName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var descriptionlabel: UILabel!
     var name:String!
     var exams = [String:[String:[String:Any]]]()
     var d:String!
     override func viewDidLoad() {
-        self.examName.text = name
         self.descriptionlabel.text = d
         super.viewDidLoad()
+        self.navigationItem.title = name
         tableView.dataSource = self
         tableView.delegate = self
         let url = URL(string: "http://45.56.103.124/exams")!

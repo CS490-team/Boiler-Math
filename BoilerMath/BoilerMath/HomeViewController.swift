@@ -70,6 +70,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let name = Array(courses.keys)[indexPath.row] as! String
         let description = courses[name]
         let detailsViewController = segue.destination as! coueseDetailsViewController
+//        detailsViewController.navigationController?.navigationBar.topItem?.title = name
         detailsViewController.name = name
         detailsViewController.d = description
         tableView.deselectRow(at: indexPath, animated: true)
