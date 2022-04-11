@@ -151,4 +151,8 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/_Uyvo6-s.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/_Uyvo6-s.gif' title='Video Walkthrough1' width='' alt='Video Walkthrough1' />
+
+
+<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/H2ZXu5uO.gif
+' title='Video Walkthrough2' width='' alt='Video Walkthrough2' />
