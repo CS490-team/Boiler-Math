@@ -69,7 +69,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ziw-5e-OuA"/>
-                                    <segue destination="lh2-St-BQY" kind="presentation" identifier="loginSegue" id="r5H-nI-Oe8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2K-V0-E5I">
@@ -85,6 +84,7 @@
                     <connections>
                         <outlet property="passwordField" destination="pIf-i5-naD" id="Ul2-fp-QnM"/>
                         <outlet property="usernameField" destination="G2K-V0-E5I" id="n8O-A1-Tg6"/>
+                        <segue destination="gTr-X8-Hu6" kind="presentation" identifier="loginSegue" id="1st-yn-IgB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -480,10 +480,27 @@
             </objects>
             <point key="canvasLocation" x="18" y="795"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XwI-RG-hJJ">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="gTr-X8-Hu6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gmN-QS-XfS">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lh2-St-BQY" kind="relationship" relationship="rootViewController" id="h9R-fk-TBa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfX-sg-EeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1077" y="-581"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4z0-1t-leN">
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="lh2-St-BQY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BA7-z0-Ad0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b0s-bM-xzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
