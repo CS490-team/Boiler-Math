@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295D2FF2280A16B000F4DA23 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D2FF1280A16B000F4DA23 /* CameraViewController.swift */; };
+		29D7DC492809BD34001C667A /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7DC482809BD34001C667A /* DiscussionViewController.swift */; };
+		29D7DC4D2809C0AD001C667A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7DC4C2809C0AD001C667A /* PostCell.swift */; };
 		431855CC2803865C00F4A829 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855CB2803865C00F4A829 /* dateCell.swift */; };
 		431855D02803884D00F4A829 /* MoredetailedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855CF2803884D00F4A829 /* MoredetailedController.swift */; };
 		431855D228038E9300F4A829 /* examCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855D128038E9300F4A829 /* examCell.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		295D2FF1280A16B000F4DA23 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		29D7DC482809BD34001C667A /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
+		29D7DC4C2809C0AD001C667A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		431855CB2803865C00F4A829 /* dateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
 		431855CF2803884D00F4A829 /* MoredetailedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoredetailedController.swift; sourceTree = "<group>"; };
 		431855D128038E9300F4A829 /* examCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examCell.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				431855CB2803865C00F4A829 /* dateCell.swift */,
 				431855CF2803884D00F4A829 /* MoredetailedController.swift */,
 				431855D128038E9300F4A829 /* examCell.swift */,
+				29D7DC482809BD34001C667A /* DiscussionViewController.swift */,
+				29D7DC4C2809C0AD001C667A /* PostCell.swift */,
+				295D2FF1280A16B000F4DA23 /* CameraViewController.swift */,
 			);
 			path = BoilerMath;
 			sourceTree = "<group>";
@@ -231,12 +240,15 @@
 				E53241AF27F64B5B00A91593 /* LoginViewController.swift in Sources */,
 				431855D02803884D00F4A829 /* MoredetailedController.swift in Sources */,
 				E532419927F6451400A91593 /* AppDelegate.swift in Sources */,
+				295D2FF2280A16B000F4DA23 /* CameraViewController.swift in Sources */,
 				431855D228038E9300F4A829 /* examCell.swift in Sources */,
 				E53241B327F797D100A91593 /* SignupViewController.swift in Sources */,
 				E532419B27F6451400A91593 /* SceneDelegate.swift in Sources */,
 				43B7E49B2803699C0012C3AE /* courseCell.swift in Sources */,
 				E53241B127F6556600A91593 /* HomeViewController.swift in Sources */,
+				29D7DC492809BD34001C667A /* DiscussionViewController.swift in Sources */,
 				431855CC2803865C00F4A829 /* dateCell.swift in Sources */,
+				29D7DC4D2809C0AD001C667A /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
