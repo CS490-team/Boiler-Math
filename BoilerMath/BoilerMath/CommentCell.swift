@@ -1,5 +1,5 @@
 //
-//  PostCell.swift
+//  CommentCell.swift
 //  BoilerMath
 //
 //  Created by user215336 on 4/15/22.
@@ -7,14 +7,10 @@
 
 import UIKit
 
-class PostCell: UITableViewCell {
-    var contoller:UIViewController!
+class CommentCell: UITableViewCell {
 
-    @IBOutlet weak var postTitle: UILabel!
-    
-    @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var postAuthor: UILabel!
-    @IBOutlet weak var postContext: UILabel!
+    @IBOutlet weak var context: UILabel!
+    @IBOutlet weak var Author: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

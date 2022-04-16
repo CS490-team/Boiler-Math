@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		295D2FF2280A16B000F4DA23 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D2FF1280A16B000F4DA23 /* CameraViewController.swift */; };
+		295D2FF4280A398D00F4DA23 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D2FF3280A398D00F4DA23 /* CommentCell.swift */; };
 		29D7DC492809BD34001C667A /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7DC482809BD34001C667A /* DiscussionViewController.swift */; };
 		29D7DC4D2809C0AD001C667A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7DC4C2809C0AD001C667A /* PostCell.swift */; };
 		431855CC2803865C00F4A829 /* dateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431855CB2803865C00F4A829 /* dateCell.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		295D2FF1280A16B000F4DA23 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		295D2FF3280A398D00F4DA23 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		29D7DC482809BD34001C667A /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		29D7DC4C2809C0AD001C667A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		431855CB2803865C00F4A829 /* dateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCell.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				29D7DC482809BD34001C667A /* DiscussionViewController.swift */,
 				29D7DC4C2809C0AD001C667A /* PostCell.swift */,
 				295D2FF1280A16B000F4DA23 /* CameraViewController.swift */,
+				295D2FF3280A398D00F4DA23 /* CommentCell.swift */,
 			);
 			path = BoilerMath;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				29D7DC492809BD34001C667A /* DiscussionViewController.swift in Sources */,
 				431855CC2803865C00F4A829 /* dateCell.swift in Sources */,
 				29D7DC4D2809C0AD001C667A /* PostCell.swift in Sources */,
+				295D2FF4280A398D00F4DA23 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

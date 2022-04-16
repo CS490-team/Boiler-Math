@@ -6,52 +6,75 @@
 //
 
 import UIKit
-
-class DiscussionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+import Parse
+import AlamofireImage
+import MessageInputBar
+class DiscussionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource, MessageInputBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return posts.count
     }
+    var posts = [PFObject]()
+    var selectedPost: PFObject!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className:"Posts")
+        query.includeKeys(["Author", "Comments", "Comments.author"])
+        query.limit = 20
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        //cell.author.text = self.author
-        //let post = posts[indexPath.row]
-        //let title = post["title"] as! String
-        //cell.postTitle.text = title
-        //cell.context.text = self.context
-        //cell.contoller = self
-        return cell
+        let post = posts[indexPath.section]
+        let comments = (post["Comments"] as? [PFObject]) ?? []
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+            
+            let user = post["Author"] as! PFUser
+            cell.postAuthor.text = user.username
+            cell.postContext.text = post["caption"] as? String
+            let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            cell.postImage.af.setImage(withURL: url)
+            
+            return cell
+            
+        } else if indexPath.row <= comments.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
+            let comment = comments[indexPath.row - 1]
+            cell.context.text = comment["text"] as! String
+            
+            let user = comment["Author"] as! PFUser
+            
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!
+            return cell
+        }
     }
     
-
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         //self.tableView.reloadData()
-
-        // Do any additional setup after loading the view.
-        let url = URL(string: "http://45.56.103.124/descriptions")!
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
-        let task = session.dataTask(with: request) { (data, response, error) in
-             // This will run when the network request returns
-             if let error = error {
-                    print(error.localizedDescription)
-             } else if let data = data {
-                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: String]
-                
-                 self.tableView.reloadData()
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
-
-             }
-        }
-        task.resume()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.keyboardDismissMode = .interactive
+        //let center = NotificationCenter.default
+        //center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     

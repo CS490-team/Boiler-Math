@@ -8,5 +8,5 @@ target 'BoilerMath' do
   # Pods for BoilerMath
   pod 'Parse'
   pod 'AlamofireImage'
-
+  pod 'MessageInputBar'
 end
