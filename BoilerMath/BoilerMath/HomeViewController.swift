@@ -21,6 +21,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         delegate.window?.rootViewController = LoginViewController
     }
     var courses = [String:String]()
+    var dataDictionary2 = [String: Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -44,6 +45,20 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
              }
         }
         task.resume()
+        
+        let url2 = URL(string: "http://45.56.103.124/exams")!
+        let request2 = URLRequest(url: url2, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session2 = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task2 = session2.dataTask(with: request2) { (data, response, error) in
+             // This will run when the network request returns
+             if let error = error {
+                    print(error.localizedDescription)
+             } else if let data = data {
+                 self.dataDictionary2 = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+
+             }
+        }
+        task2.resume()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return courses.count
@@ -70,9 +85,11 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let name = Array(courses.keys)[indexPath.row] as! String
         let description = courses[name]
         let detailsViewController = segue.destination as! coueseDetailsViewController
+        let dd = dataDictionary2
 //        detailsViewController.navigationController?.navigationBar.topItem?.title = name
         detailsViewController.name = name
         detailsViewController.d = description
+        detailsViewController.dd = dd
         tableView.deselectRow(at: indexPath, animated: true)
 
 
