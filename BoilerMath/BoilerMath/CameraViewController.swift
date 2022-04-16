@@ -13,7 +13,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBAction func onSubmit(_ sender: Any) {
         let post = PFObject(className: "Posts")
         post["caption"] = commentField.text!
-        
+        post["title"] = postTitle.text!
         post["Author"] = PFUser.current()!
         
         let imageData = ImageView.image!.pngData()
@@ -33,7 +33,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    
+ 
+    @IBOutlet weak var postTitle: UITextField!
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var ImageView: UIImageView!
     override func viewDidLoad() {
