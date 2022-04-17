@@ -29,8 +29,8 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * User can create a new account(completed)
 * User can login(completed)
 * User can view an exam(completed)
-* User can mark an exam completed
-* User can post a new comment to exams
+* User can mark an exam(completed)
+* User can post a new comment to exams(completed)
 * User can like an exam
 * User can rate the difficulty of an exam
 * User can download an exam(completed)
