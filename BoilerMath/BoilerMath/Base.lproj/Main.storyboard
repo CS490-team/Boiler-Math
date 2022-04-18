@@ -167,7 +167,7 @@
                         <viewLayoutGuide key="safeArea" id="WHF-14-sE2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Ous-UB-YJ6">
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="never" id="Ous-UB-YJ6">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="CTj-W2-a0m">
                             <connections>
                                 <action selector="logout:" destination="gld-GV-ybP" id="cfS-LL-UAP"/>
@@ -483,9 +483,8 @@
         <!--Navigation Controller-->
         <scene sceneID="XwI-RG-hJJ">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="gTr-X8-Hu6" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="gTr-X8-Hu6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gmN-QS-XfS">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -524,7 +523,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xEa-Up-I8g">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="828"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>

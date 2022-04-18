@@ -21,6 +21,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         delegate.window?.rootViewController = LoginViewController
     }
     var courses = [String:String]()
+    var namelist = [String]()
     var dataDictionary2 = [String: Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: String]
                  self.courses = dataDictionary
+                 self.namelist = Array(self.courses.keys)
+                 self.namelist.sort()
                  self.tableView.reloadData()
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
@@ -65,7 +68,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell") as! courseCell
-        let name = Array(courses.keys)[indexPath.row] as! String
+        let name = namelist[indexPath.row] as! String
         let description = courses[name]
         cell.CourseNameLabel.text = name
         cell.CourseDescriptionLabel.text = description
@@ -82,7 +85,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         // Pass the selected object to the new view controller.
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let name = Array(courses.keys)[indexPath.row] as! String
+        let name = namelist[indexPath.row] as! String
         let description = courses[name]
         let detailsViewController = segue.destination as! coueseDetailsViewController
         let dd = dataDictionary2

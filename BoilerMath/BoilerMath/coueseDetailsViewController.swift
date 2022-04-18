@@ -18,6 +18,7 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
     var exams = [String:[String:[String:Any]]]()
     var d:String!
     var dd = [String: Any]()
+    var examlist = [String]()
     override func viewDidLoad() {
         self.descriptionlabel.text = d
         super.viewDidLoad()
@@ -25,8 +26,11 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
         tableView.dataSource = self
         tableView.delegate = self
         let dataDictionary = dd
+        
         if (!dataDictionary.isEmpty) {
             self.exams = dataDictionary[self.name] as! [String : [String:[String:Any]]]
+            self.examlist = Array(self.exams.keys)
+            self.examlist.sort()
             self.tableView.reloadData()
         }
     }
@@ -34,7 +38,8 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
         return exams.count    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell") as! dateCell
-        let date = Array(exams.keys)[indexPath.row] as! String
+        let date = self.examlist[indexPath.row] as! String
+        print(date)
         cell.dateLabel.text = date
         return cell
     }
@@ -48,7 +53,7 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
         // Pass the selected object to the new view controller.
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let date = Array(exams.keys)[indexPath.row] as! String
+        let date = self.examlist[indexPath.row] as! String
         let e = exams[date]
         let detailsViewController = segue.destination as! MoredetailedController
         detailsViewController.exams = e!
