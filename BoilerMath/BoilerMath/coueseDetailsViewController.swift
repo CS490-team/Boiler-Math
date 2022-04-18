@@ -39,7 +39,6 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell") as! dateCell
         let date = self.examlist[indexPath.row] as! String
-        print(date)
         cell.dateLabel.text = date
         return cell
     }
