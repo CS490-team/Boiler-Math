@@ -86,6 +86,7 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 
 ## Wireframes
 <img src="./flow.png" width=800>
+![IMG_3872](https://user-images.githubusercontent.com/82489058/163751679-84ca7100-59e1-475e-a9b3-e1cc35f1c3ed.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="./flow.png" width=800>
