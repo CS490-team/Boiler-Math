@@ -30,7 +30,7 @@ class coueseDetailsViewController: UIViewController, UITableViewDelegate,UITable
         if (!dataDictionary.isEmpty) {
             self.exams = dataDictionary[self.name] as! [String : [String:[String:Any]]]
             self.examlist = Array(self.exams.keys)
-            self.examlist.sort()
+            self.examlist.sort(by: >)
             self.tableView.reloadData()
         }
     }
