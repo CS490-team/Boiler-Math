@@ -30,11 +30,13 @@ We’ve got you covered from basic arithmetic to advanced calculus and geometry.
 * User can login(completed)
 * User can view an exam(completed)
 * User can mark an exam(completed)
+* User can go to a discussion board and post a new comment to a specific question(completed)
 * User can post a new comment to exams(completed)
-* User can like an exam
-* User can rate the difficulty of an exam
+* User can like an exam(discarded)
+* User can rate the difficulty of an exam(discarded)
 * User can download an exam(completed)
 
+Note: As for the seventh and eighth functionality, we decided to give up them and work on discussion board because in this way, our app would look more clear and user-friendly.
 
 **Optional Nice-to-have Stories**
 
