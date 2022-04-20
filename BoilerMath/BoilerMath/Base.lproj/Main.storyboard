@@ -602,7 +602,7 @@
                     <navigationItem key="navigationItem" title="Discussion board" id="Atj-TS-U8K">
                         <barButtonItem key="rightBarButtonItem" title="posting" id="mOw-Ay-OZU">
                             <connections>
-                                <segue destination="oXR-bE-wgm" kind="presentation" id="AiK-AF-EMz"/>
+                                <segue destination="oXR-bE-wgm" kind="show" id="AiK-AF-EMz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -655,6 +655,7 @@
                         <viewLayoutGuide key="safeArea" id="6ck-cg-nAf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8ck-ZK-8Hy"/>
                     <connections>
                         <outlet property="ImageView" destination="mbD-Xu-1hn" id="agH-8E-9Ll"/>
                         <outlet property="commentField" destination="HLe-6E-3np" id="RtD-gO-yVx"/>
