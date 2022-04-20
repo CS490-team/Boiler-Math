@@ -12,6 +12,7 @@ class PostCell: UITableViewCell {
 
     @IBOutlet weak var postTitle: UILabel!
     
+    
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postAuthor: UILabel!
     @IBOutlet weak var postContext: UILabel!
