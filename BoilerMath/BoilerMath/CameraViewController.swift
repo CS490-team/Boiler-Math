@@ -15,7 +15,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["caption"] = commentField.text!
         post["title"] = postTitle.text!
         post["Author"] = PFUser.current()!
-        
+        post["topic"] = topicField.text!
         let imageData = ImageView.image!.pngData()
         let file = PFFileObject( data: imageData!)
         post["image"] = file
@@ -34,6 +34,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
  
+    @IBOutlet weak var topicField: UITextField!
     @IBOutlet weak var postTitle: UITextField!
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var ImageView: UIImageView!

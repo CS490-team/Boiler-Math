@@ -47,6 +47,7 @@ class DiscussionViewController: UIViewController,UITableViewDelegate,UITableView
             var name = "by " + user.username!
             cell.postAuthor.text = name
             cell.postTitle.text = post["title"] as? String
+            cell.postTopic.text = post["topic"] as? String
             cell.postContext.text = post["caption"] as? String
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!
