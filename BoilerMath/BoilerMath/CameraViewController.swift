@@ -22,16 +22,24 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let imageData = ImageView.image!.pngData()
         let file = PFFileObject( data: imageData!)
         post["image"] = file
-        
-        post.saveInBackground{
-         (success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-                print("success")
-            } else {
-                print("error")
+
+        if ((commentField.text == "add a paragraph...") || (topicField.text == "add a topic...") || (postTitle.text == "add a course...")) {
+            let alert = UIAlertController(title: "Error", message: "Empty text field, please try again", preferredStyle: .alert)
+                    let OK = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alert.addAction(OK)
+                    self.present(alert, animated: true, completion: nil)
+        } else {
+            post.saveInBackground{
+             (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                    print("success")
+                } else {
+                    print("error")
+                }
             }
         }
+
         
         
     }
