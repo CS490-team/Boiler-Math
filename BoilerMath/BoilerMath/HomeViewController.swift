@@ -10,6 +10,7 @@ import Parse
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+
     
     @IBAction func logout(_ sender: Any) {
         PFUser.logOut()
@@ -68,10 +69,80 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell") as! courseCell
+        
+
+        
         let name = namelist[indexPath.row] as! String
+        
+        if name == "MA16100" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "1.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA16200" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "7.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA16500" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "3.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA16600" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "4.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA26100" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "5.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA26200" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "6.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA26500" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "2.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+        
+        if name == "MA26600" {
+            let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: cell.frame.width - 10, height: cell.frame.height - 5))
+            let image = UIImage(named: "8.jpeg")
+            imageView.image = image
+            cell.backgroundView = UIView()
+            cell.backgroundView!.addSubview(imageView)
+        }
+
+        
         let description = courses[name]
         cell.CourseNameLabel.text = name
-        cell.CourseDescriptionLabel.text = description
+//        cell.CourseDescriptionLabel.text = description
+
         return cell
     }
 

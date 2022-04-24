@@ -9,7 +9,10 @@ import UIKit
 import AlamofireImage
 import Parse
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    @IBAction func backbutton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func onSubmit(_ sender: Any) {
         let post = PFObject(className: "Posts")
         post["caption"] = commentField.text!

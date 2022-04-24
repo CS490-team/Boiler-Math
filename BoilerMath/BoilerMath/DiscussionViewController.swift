@@ -17,16 +17,17 @@ class DiscussionViewController: UIViewController,UITableViewDelegate,UITableView
     var posts = [PFObject]()
     var selectedPost: PFObject!
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className:"Posts")
         query.includeKeys(["Author", "Comments", "Comments.author"])
-        query.limit = 20
+        query.limit = 20000
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                
+                self.posts.reverse()
                 self.tableView.reloadData()
             }
         }
@@ -38,6 +39,7 @@ class DiscussionViewController: UIViewController,UITableViewDelegate,UITableView
         return showsCommentBar
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let post = posts[indexPath.section]
         let comments = (post["Comments"] as? [PFObject]) ?? []
         if indexPath.row == 0 {
