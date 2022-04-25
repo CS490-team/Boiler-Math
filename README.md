@@ -164,3 +164,7 @@ Here's a walkthrough of implemented user stories:
 <img src='https://submissions.us-east-1.linodeobjects.com/ios_university/4IfUSEr7.gif
 ' title='Video Walkthrough3' width='' alt='Video Walkthrough3' />
 
+<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/hgyhxgmD.gif
+' title='Video Walkthrough4' width='' alt='Video Walkthrough4' />
+
+
